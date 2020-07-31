@@ -6,6 +6,11 @@
         <h1>Your Notes -</h1>
         <h5><a href="/notes/create">Create New Note</a></small>
     </div>
+    
+    @if(count($notes) == 0)
+    <h4>You do not have any notes.</h4>
+    @endif
+    
     @foreach($notes as $note)
         <div class="notes-item">
             <!-- <h4><a href="/notes/{{ $note->id }}">{{ $note->User }}</a></h4> -->
