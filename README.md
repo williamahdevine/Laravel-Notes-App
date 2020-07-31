@@ -16,7 +16,7 @@ T- run the app:
 - Ensure you have all the required dependancies: php, composer, mysql, etc.
 - Download or clone the repository.
 - Using xampp start a apache & mysql server.
-- You can either dump the SQL file in the main directory into your local mysql database called 'notesapp' in phpmyadmin 
+- You can either dump the SQL file 'notsapp.sql' in the main directory into your local mysql database called 'notesapp' in phpmyadmin 
 - or- 
 - You can migrate the database. 
     - In terminal log into your mysql. 
