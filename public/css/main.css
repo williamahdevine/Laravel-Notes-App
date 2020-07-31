@@ -1,0 +1,391 @@
+html,
+body {
+  background-color: #fff;
+  color: #636b6f;
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  height: 100vh;
+  margin: 0;
+}
+
+.title {
+  font-size: 50px;
+  text-transform: uppercase;
+  border-bottom: 2px solid;
+  padding: 12px 0;
+  color: #5e2195;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.navbar-brand {
+  color: #5e2195!important;
+}
+
+/********* Home **********/
+
+.home-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  text-align: center;
+  flex-direction: column;
+  height: 85vh;
+  width: 85%;
+}
+
+.home-wrapper .menu-item-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.home-wrapper .menuItem  {
+  background-color: #5f2195;
+  height: 2.5rem;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.home-wrapper .menuItem:active,
+.home-wrapper .menuItem:visited {
+  color: white;
+}
+
+.home-wrapper .menuItem:hover {
+  background-color: #4c157c;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .home-wrapper {
+    width: 50%;
+  }
+  
+  .home-wrapper .menuItem {
+    width: 50%;
+  }
+  
+  .home-wrapper .title {
+    width: 50%;
+  }
+}
+
+/********* End Home *********/ 
+
+/********** Notes Create **********/
+
+.create-notes {
+  background: #f7f7f7;
+  padding: 20px;
+}
+
+.create-notes label,
+.create-notes select {
+  display: block;
+}
+
+.create-notes label {
+  margin-top: 30px;
+}
+
+.create-notes select, .create-notes #newCategory {
+  padding: 4px;
+  width: 200px;
+}
+
+.create-notes input[type=submit] {
+  background: #5e2195;
+  padding: 8px 20px;
+  color: #fff;
+  border: 0;
+  margin-top: 20px;
+}
+
+.create-notes form {
+  display: flex; 
+  flex-direction: column;
+}
+
+.create-notes .categoryCont {
+  display:flex;
+  align-items: flex-start; 
+  flex-direction: column;
+}
+
+.create-notes .categoryCont #category {
+  height: fit-content;
+}
+
+.create-notes .categoryCont small {
+  margin:0 0.25rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .create-notes .categoryCont {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+/********** End Create **********/
+
+/********** Notes Index **********/
+
+.notes-index {
+  width: 85%;
+  margin: 3rem auto;
+}
+
+.notes-index div {
+  display:flex; 
+  flex-direction: row; 
+  align-items:center;
+}
+
+.notes-index h5 {
+  margin: 0 0 0.25rem 0.5rem;
+}
+
+.notes-index h5 a,
+.notes-index h5 a:visited,
+.notes-index h5 a:active {
+  color: #777;
+  cursor: pointer;
+}
+
+.notes-index .notes-item {
+  display:flex; 
+  flex-direction: row; 
+  align-items:center;
+  margin: 10px 0;
+  padding: 12px;
+  background: #f4f4f4;
+}
+
+.notes-index .notes-item img {
+  width: 20px;
+  margin-left: 1rem;
+}
+
+.notes-index .notes-item h4 {
+  display: inline-block;
+  font-weight: normal;
+  margin: 0 0 0 1rem;
+}
+
+.notes-index .notes-item h4 a {
+  color: #777;
+  text-decoration: none !important;
+}
+
+.notes-index h6 {
+  margin: 0 0 0 0.5rem;
+}
+
+.notes-index small {
+  margin-left: auto;
+}
+
+.notes-index .mssgCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notes-index .mssg {
+  color: red;
+}
+
+.notes-index form button {
+  border: none;
+  outline: none;
+}
+
+/********** End Index *********/
+
+/********* Welcome **********/
+
+.welcome-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  text-align: center;
+  flex-direction: column;
+  height: 85vh;
+  width: 85%;
+}
+
+.welcome-wrapper .welcomNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.welcome-wrapper .welcomeBTN {
+  background-color: #5f2195;
+  height: 2.5rem;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.welcome-wrapper .welcomeBTN:active, 
+.welcome-wrapper .welcomeBTN:visited {
+  color: white;
+}
+
+.welcome-wrapper .welcomeBTN:hover {
+  background-color: #4c157c;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.welcome-wrapper small {
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .welcome-wrapper .title {
+    width: 40%;
+  }
+  .welcome-wrapper .welcomeBTN {
+    width: 40%;
+  }
+}
+/********** End Welcome **********/
+
+/********** Login & Register **********/
+.login-wrapper, 
+.register-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  text-align: center;
+  flex-direction: column;
+  height: 85vh;
+  width: 85%;
+}
+
+.login-wrapper form, 
+.register-wrapper form {
+  width: 100%;
+}
+
+.login-wrapper form .uname-field,
+.login-wrapper form .pass-field, 
+.register-wrapper form .field {
+  margin: 1rem 0;
+}
+.login-wrapper .loginBTN-cont, 
+.register-wrapper .registerBTN-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-wrapper .loginBTN, 
+.register-wrapper .registerBTN {
+  background-color: #5f2195;
+  height: 2.5rem;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-wrapper .loginBTN:hover, 
+.register-wrapper .registerBTN:hover {
+  color: white;
+  background-color: #4c157c;
+}
+
+@media only screen and (min-width: 1000px) {
+  .login-wrapper .title, 
+  .register-wrapper .title {
+    width: 40%;
+  }
+  .login-wrapper form, 
+  .register-wrapper form {
+    width: 40%;
+  }
+}
+/********** End Login & Register *********/
+
+/********* Notes Details **********/
+/* notes details page */
+
+.details-wrapper {
+  max-width: 1140px;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+.details-wrapper .backBTN {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  background-color: #5e2195;
+  margin-bottom: 20px;
+  width:fit-content;
+  color: white;
+  /* border:none */
+}
+
+.details-wrapper .backBTN:visited,
+.details-wrapper .backBTN:active {
+  color:white;
+}
+
+.details-wrapper .backBTN:hover {
+  color: white;
+  background-color: #4c157c;
+}
+
+.details-wrapper .notes-details {
+  background: #f7f7f7;
+  padding: 20px;
+}
+
+.details-wrapper .notes-details p {
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.details-wrapper .notes-details button {
+  background: #5e2195;
+  padding: 8px 20px;
+  color: #fff;
+  border: 0;
+  margin-top: 20px;
+}
+
+.details-wrapper .backBTN {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  color: #5e2195;
+  margin-bottom: 20px;
+  width:fit-content;
+}
+
+/********** End Notes Details *********/
